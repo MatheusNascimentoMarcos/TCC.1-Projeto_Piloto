@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2023-11-26T13:17:01.347-03:00</last-modified>
+    <description>Computes cryptographic hashes for a String column.
+Simply speaking, it generates unique fingerprints for String contents.
+It is practically impossible to find 2 different input values sharing the same hash value (collision resistence). Besides brute force attempts of trying many inputs, it is also practically impossible to restore the original content from the fingerprint (oneway function).</description>
+    <component-type>Manipulator</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUklEQVR4nGP4f5HlPzYc6VrwX5Sh9P/Kzli42IzqJLBYaWw2XIwBm+aPR7XBCkH43AovuHiYE8TQ1V0x+A24stYNbsCbg4ZgsQ9HdOFiF1Z54Tdg44RIsEJviyK42KU1HnAD3h3WQzXg1iYnuCQpeH5DAn4D1ERL4BivAcj4zHJvuIIvJ5TBYm8P6cPFbm5yRlGPYcDq7hiwwliPfLjY5TXucAM+H1fFb0BdaiZY4bTKZLjY5omQQI1wKcAIcBQD/p7n+W+iUgxWvGdmCFy8My8DLDalPAXTgINzg7AGkJZkCdgwEJbhwJTfMzMUvwGEMNwAZOdUxGeDJWfWJMHFlnfEgsUSffIxnI9iwM8zkv8VBSCmH54fBFdQEJkDFlvYlIDfgLtbHeHOe7zLCiz2/ZQc3P+nlvjhN2D3jDCwQiPFkv9/zgmAxW5vRhj6ar8xVgMAQXdVmPHoqD0AAAAASUVORK5CYII=</icon>
+    <in-ports>
+        <port name="Input Table">Table containing a String column to hash.</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output Table">The input table enriched by the selected output column holding the hash values.</port>
+    </out-ports>
+</component-metadata>
