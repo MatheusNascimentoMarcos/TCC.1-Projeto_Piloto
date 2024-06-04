@@ -6,10 +6,72 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="settings">
+            <config key="file_selection_Internals">
+                <entry key="SettingsModelID" type="xstring" value="SMID_ReaderFileChooser"/>
+                <entry key="EnabledStatus" type="xboolean" value="true"/>
+            </config>
+            <config key="file_selection">
+                <config key="file_system_chooser__Internals">
+                    <entry key="has_fs_port" type="xboolean" value="false"/>
+                    <entry key="overwritten_by_variable" type="xboolean" value="false"/>
+                    <entry key="convenience_fs_category" type="xstring" value="CUSTOM_URL"/>
+                    <entry key="relative_to" type="xstring" value="knime.space"/>
+                    <entry key="mountpoint" type="xstring" value="My-KNIME-Hub"/>
+                    <entry key="spaceId" type="xstring" value="*yIYi9WfHpvsSNu8n"/>
+                    <entry key="spaceName" type="xstring" value="Private"/>
+                    <entry key="custom_url_timeout" type="xint" value="10000"/>
+                    <entry key="connected_fs" type="xboolean" value="true"/>
+                </config>
+                <config key="path">
+                    <entry key="location_present" type="xboolean" value="true"/>
+                    <entry key="file_system_type" type="xstring" value="CUSTOM_URL"/>
+                    <entry key="file_system_specifier" type="xstring" value="10000"/>
+                    <entry key="path" type="xstring" value="https://docs.google.com/spreadsheets/d/1KZBxTd6f09jGIHxWLA2AR2uN37pu81i2ICr_VzC9maM/export?format=csv"/>
+                </config>
+                <config key="filter_mode_Internals">
+                    <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
+                    <entry key="EnabledStatus" type="xboolean" value="false"/>
+                </config>
+                <config key="filter_mode">
+                    <entry key="filter_mode" type="xstring" value="FILE"/>
+                    <entry key="include_subfolders" type="xboolean" value="false"/>
+                    <config key="filter_options">
+                        <entry key="filter_files_extension" type="xboolean" value="false"/>
+                        <entry key="files_extension_expression" type="xstring" value=""/>
+                        <entry key="files_extension_case_sensitive" type="xboolean" value="false"/>
+                        <entry key="filter_files_name" type="xboolean" value="false"/>
+                        <entry key="files_name_expression" type="xstring" value="*"/>
+                        <entry key="files_name_case_sensitive" type="xboolean" value="false"/>
+                        <entry key="files_name_filter_type" type="xstring" value="WILDCARD"/>
+                        <entry key="include_hidden_files" type="xboolean" value="false"/>
+                        <entry key="include_special_files" type="xboolean" value="true"/>
+                        <entry key="filter_folders_name" type="xboolean" value="false"/>
+                        <entry key="folders_name_expression" type="xstring" value="*"/>
+                        <entry key="folders_name_case_sensitive" type="xboolean" value="false"/>
+                        <entry key="folders_name_filter_type" type="xstring" value="WILDCARD"/>
+                        <entry key="include_hidden_folders" type="xboolean" value="false"/>
+                        <entry key="follow_links" type="xboolean" value="true"/>
+                    </config>
+                </config>
+            </config>
+            <entry key="has_column_header" type="xboolean" value="true"/>
+            <entry key="has_row_id" type="xboolean" value="false"/>
+            <entry key="support_short_data_rows" type="xboolean" value="false"/>
+            <entry key="skip_empty_data_rows" type="xboolean" value="false"/>
+            <entry key="prepend_file_idx_to_row_id" type="xboolean" value="false"/>
+            <entry key="comment_char" type="xstring" value="#"/>
+            <entry key="column_delimiter" type="xstring" value=","/>
+            <entry key="quote_char" type="xstring" value="&quot;"/>
+            <entry key="quote_escape_char" type="xstring" value="&quot;"/>
+            <entry key="use_line_break_row_delimiter" type="xboolean" value="true"/>
+            <entry key="row_delimiter" type="xstring" value="%%00013%%00010"/>
+            <entry key="autodetect_buffer_size" type="xint" value="1048576"/>
+        </config>
         <config key="table_spec_config_Internals">
             <entry key="version" type="xstring" value="V4_4"/>
             <config key="individual_specs">
-                <config key="C:\Users\matheus.marcos\Downloads\Olist Conjunto de dados\olist_sellers_dataset.csv">
+                <config key="/spreadsheets/d/1KZBxTd6f09jGIHxWLA2AR2uN37pu81i2ICr_VzC9maM/export">
                     <entry key="num_columns" type="xint" value="4"/>
                     <config key="0">
                         <entry key="name" type="xstring" value="seller_id"/>
@@ -157,7 +219,7 @@
                     <entry key="force_type" type="xboolean" value="false"/>
                 </config>
             </config>
-            <entry key="source_group_id" type="xstring" value="C:\Users\matheus.marcos\Downloads\Olist Conjunto de dados\olist_sellers_dataset.csv"/>
+            <entry key="source_group_id" type="xstring" value="https://docs.google.com/spreadsheets/d/1KZBxTd6f09jGIHxWLA2AR2uN37pu81i2ICr_VzC9maM/export?format=csv"/>
             <config key="config_id">
                 <config key="multi_table_read">
                     <config key="settings">
@@ -186,67 +248,6 @@
                         <entry key="number_of_lines_to_skip" type="xlong" value="1"/>
                         <entry key="skip_data_rows" type="xboolean" value="false"/>
                         <entry key="number_of_rows_to_skip" type="xlong" value="1"/>
-                    </config>
-                </config>
-            </config>
-        </config>
-        <config key="settings">
-            <entry key="has_column_header" type="xboolean" value="true"/>
-            <entry key="has_row_id" type="xboolean" value="false"/>
-            <entry key="support_short_data_rows" type="xboolean" value="false"/>
-            <entry key="skip_empty_data_rows" type="xboolean" value="false"/>
-            <entry key="prepend_file_idx_to_row_id" type="xboolean" value="false"/>
-            <entry key="comment_char" type="xstring" value="#"/>
-            <entry key="column_delimiter" type="xstring" value=","/>
-            <entry key="quote_char" type="xstring" value="&quot;"/>
-            <entry key="quote_escape_char" type="xstring" value="&quot;"/>
-            <entry key="use_line_break_row_delimiter" type="xboolean" value="true"/>
-            <entry key="row_delimiter" type="xstring" value="%%00013%%00010"/>
-            <entry key="autodetect_buffer_size" type="xint" value="1048576"/>
-            <config key="file_selection_Internals">
-                <entry key="SettingsModelID" type="xstring" value="SMID_ReaderFileChooser"/>
-                <entry key="EnabledStatus" type="xboolean" value="true"/>
-            </config>
-            <config key="file_selection">
-                <config key="file_system_chooser__Internals">
-                    <entry key="has_fs_port" type="xboolean" value="false"/>
-                    <entry key="overwritten_by_variable" type="xboolean" value="false"/>
-                    <entry key="convenience_fs_category" type="xstring" value="LOCAL"/>
-                    <entry key="relative_to" type="xstring" value="knime.space"/>
-                    <entry key="mountpoint" type="xstring" value="My-KNIME-Hub"/>
-                    <entry key="spaceId" type="xstring" value=""/>
-                    <entry key="spaceName" type="xstring" value=""/>
-                    <entry key="custom_url_timeout" type="xint" value="10000"/>
-                    <entry key="connected_fs" type="xboolean" value="true"/>
-                </config>
-                <config key="path">
-                    <entry key="location_present" type="xboolean" value="true"/>
-                    <entry key="file_system_type" type="xstring" value="LOCAL"/>
-                    <entry key="path" type="xstring" value="C:\Users\matheus.marcos\Downloads\Olist Conjunto de dados\olist_sellers_dataset.csv"/>
-                </config>
-                <config key="filter_mode_Internals">
-                    <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
-                    <entry key="EnabledStatus" type="xboolean" value="true"/>
-                </config>
-                <config key="filter_mode">
-                    <entry key="filter_mode" type="xstring" value="FILE"/>
-                    <entry key="include_subfolders" type="xboolean" value="false"/>
-                    <config key="filter_options">
-                        <entry key="filter_files_extension" type="xboolean" value="false"/>
-                        <entry key="files_extension_expression" type="xstring" value=""/>
-                        <entry key="files_extension_case_sensitive" type="xboolean" value="false"/>
-                        <entry key="filter_files_name" type="xboolean" value="false"/>
-                        <entry key="files_name_expression" type="xstring" value="*"/>
-                        <entry key="files_name_case_sensitive" type="xboolean" value="false"/>
-                        <entry key="files_name_filter_type" type="xstring" value="WILDCARD"/>
-                        <entry key="include_hidden_files" type="xboolean" value="false"/>
-                        <entry key="include_special_files" type="xboolean" value="true"/>
-                        <entry key="filter_folders_name" type="xboolean" value="false"/>
-                        <entry key="folders_name_expression" type="xstring" value="*"/>
-                        <entry key="folders_name_case_sensitive" type="xboolean" value="false"/>
-                        <entry key="folders_name_filter_type" type="xstring" value="WILDCARD"/>
-                        <entry key="include_hidden_folders" type="xboolean" value="false"/>
-                        <entry key="follow_links" type="xboolean" value="true"/>
                     </config>
                 </config>
             </config>
@@ -298,7 +299,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory"/>
     <entry key="node-name" type="xstring" value="CSV Reader"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -315,16 +316,19 @@
         <config key="Data Table"/>
     </config>
     <entry key="name" type="xstring" value="CSV Reader"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 3095, Cols: 4"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="b88648c5-6207-4c5c-ba22-4c60da8bf653"/>
     </config>
 </config>
