@@ -13,31 +13,31 @@
         <config key="col_select">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="order_estimated_delivery_date"/>
+                <entry key="array-size" type="xint" value="5"/>
+                <entry key="0" type="xstring" value="order_purchase_timestamp"/>
+                <entry key="1" type="xstring" value="order_delivered_carrier_date"/>
+                <entry key="2" type="xstring" value="order_delivered_customer_date"/>
+                <entry key="3" type="xstring" value="order_estimated_delivery_date"/>
+                <entry key="4" type="xstring" value="shipping_limit_date"/>
             </config>
             <config key="excluded_names">
-                <entry key="array-size" type="xint" value="20"/>
-                <entry key="0" type="xstring" value="CEP"/>
-                <entry key="1" type="xstring" value="Cidade"/>
-                <entry key="2" type="xstring" value="UF"/>
-                <entry key="3" type="xstring" value="ID_Cliente_Exclusivo"/>
+                <entry key="array-size" type="xint" value="16"/>
+                <entry key="0" type="xstring" value="ID_Cliente_Exclusivo"/>
+                <entry key="1" type="xstring" value="CEP"/>
+                <entry key="2" type="xstring" value="Cidade"/>
+                <entry key="3" type="xstring" value="UF"/>
                 <entry key="4" type="xstring" value="ID_Vendedor"/>
                 <entry key="5" type="xstring" value="CEP (right)"/>
                 <entry key="6" type="xstring" value="Cidade (right)"/>
                 <entry key="7" type="xstring" value="UF (right)"/>
-                <entry key="8" type="xstring" value="Categoria"/>
-                <entry key="9" type="xstring" value="order_id"/>
-                <entry key="10" type="xstring" value="customer_id"/>
-                <entry key="11" type="xstring" value="order_status"/>
-                <entry key="12" type="xstring" value="order_purchase_timestamp"/>
+                <entry key="8" type="xstring" value="ID_DM_Produto"/>
+                <entry key="9" type="xstring" value="Categoria"/>
+                <entry key="10" type="xstring" value="order_id"/>
+                <entry key="11" type="xstring" value="customer_id"/>
+                <entry key="12" type="xstring" value="order_status"/>
                 <entry key="13" type="xstring" value="order_approved_at"/>
-                <entry key="14" type="xstring" value="order_delivered_carrier_date"/>
-                <entry key="15" type="xstring" value="order_delivered_customer_date"/>
-                <entry key="16" type="xstring" value="order_item_id"/>
-                <entry key="17" type="xstring" value="product_id"/>
-                <entry key="18" type="xstring" value="seller_id"/>
-                <entry key="19" type="xstring" value="shipping_limit_date"/>
+                <entry key="14" type="xstring" value="order_item_id"/>
+                <entry key="15" type="xstring" value="seller_id"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
             <config key="name_pattern">
@@ -62,25 +62,25 @@
             <entry key="EnabledStatus" type="xboolean" value="false"/>
         </config>
         <entry key="suffix" type="xstring" value="(Date&amp;Time)"/>
+        <entry key="typeEnum" type="xstring" value="LOCAL_DATE_TIME"/>
         <config key="date_format_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="date_format" type="xstring" value="yyyy-MM-dd HH:mm:ss"/>
-        <config key="cancel_on_fail_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="cancel_on_fail" type="xboolean" value="false"/>
-        <entry key="typeEnum" type="xstring" value="LOCAL_DATE_TIME"/>
         <config key="locale_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="locale" type="xstring" value="pt-BR"/>
+        <config key="cancel_on_fail_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="cancel_on_fail" type="xboolean" value="false"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeFactory"/>
     <entry key="node-name" type="xstring" value="String to Date&amp;Time"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Date and Time Handling"/>
@@ -93,16 +93,19 @@
     <entry key="node-feature-version" type="xstring" value="5.2.2.v202403061155"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String to Date&amp;Time"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 112650, Cols: 29"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="1d013194-72a4-4b2a-afc5-af40fe91b854"/>
     </config>
 </config>

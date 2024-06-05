@@ -16,7 +16,7 @@
                 <entry key="newName" type="xstring" value="Mês"/>
             </config>
             <config key="2">
-                <entry key="oldName" type="xstring" value="Day of week (number)"/>
+                <entry key="oldName" type="xstring" value="Day of month"/>
                 <entry key="newName" type="xstring" value="Dia"/>
             </config>
             <config key="3">
@@ -52,6 +52,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="5c3574d4-ea06-4f0f-be12-9ca5629a9ef4"/>
+        <entry key="file_store_id" type="xstring" value="db3226e3-466f-427a-a86a-99e051a418a6"/>
     </config>
 </config>

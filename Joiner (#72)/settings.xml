@@ -26,16 +26,22 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <config key="leftTableJoinPredicate">
-            <entry key="array-size" type="xint" value="1"/>
+            <entry key="array-size" type="xint" value="4"/>
             <entry key="0" type="xstring" value="Ano"/>
+            <entry key="1" type="xstring" value="Mês"/>
+            <entry key="2" type="xstring" value="Dia"/>
+            <entry key="3" type="xstring" value="Semana"/>
         </config>
         <config key="rightTableJoinPredicate_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_stringarray"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <config key="rightTableJoinPredicate">
-            <entry key="array-size" type="xint" value="1"/>
+            <entry key="array-size" type="xint" value="4"/>
             <entry key="0" type="xstring" value="Year"/>
+            <entry key="1" type="xstring" value="Month (number)"/>
+            <entry key="2" type="xstring" value="Day of month"/>
+            <entry key="3" type="xstring" value="Week"/>
         </config>
         <config key="compositionMode_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
@@ -96,7 +102,7 @@
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="7"/>
-                <entry key="0" type="xstring" value="ID"/>
+                <entry key="0" type="xstring" value="ID_DM_Tempo"/>
                 <entry key="1" type="xstring" value="Dia"/>
                 <entry key="2" type="xstring" value="Mês"/>
                 <entry key="3" type="xstring" value="Ano"/>
@@ -119,11 +125,11 @@
             </config>
             <config key="datatype">
                 <config key="typelist">
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
                 </config>
             </config>
@@ -132,36 +138,36 @@
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="30"/>
-                <entry key="0" type="xstring" value="ID"/>
-                <entry key="1" type="xstring" value="CEP"/>
-                <entry key="2" type="xstring" value="Cidade"/>
-                <entry key="3" type="xstring" value="UF"/>
-                <entry key="4" type="xstring" value="ID_Cliente_Exclusivo"/>
-                <entry key="5" type="xstring" value="ID (right)"/>
+                <entry key="0" type="xstring" value="ID_DM_Cliente"/>
+                <entry key="1" type="xstring" value="ID_Cliente_Exclusivo"/>
+                <entry key="2" type="xstring" value="CEP"/>
+                <entry key="3" type="xstring" value="Cidade"/>
+                <entry key="4" type="xstring" value="UF"/>
+                <entry key="5" type="xstring" value="ID_DM_Vendedor"/>
                 <entry key="6" type="xstring" value="ID_Vendedor"/>
                 <entry key="7" type="xstring" value="CEP (right)"/>
                 <entry key="8" type="xstring" value="Cidade (right)"/>
                 <entry key="9" type="xstring" value="UF (right)"/>
-                <entry key="10" type="xstring" value="Categoria"/>
-                <entry key="11" type="xstring" value="Altura"/>
-                <entry key="12" type="xstring" value="Largura"/>
+                <entry key="10" type="xstring" value="ID_DM_Produto"/>
+                <entry key="11" type="xstring" value="Categoria"/>
+                <entry key="12" type="xstring" value="Peso"/>
                 <entry key="13" type="xstring" value="Comprimento"/>
-                <entry key="14" type="xstring" value="Peso"/>
-                <entry key="15" type="xstring" value="order_id"/>
-                <entry key="16" type="xstring" value="customer_id"/>
-                <entry key="17" type="xstring" value="order_status"/>
-                <entry key="18" type="xstring" value="order_purchase_timestamp"/>
-                <entry key="19" type="xstring" value="order_approved_at"/>
-                <entry key="20" type="xstring" value="order_delivered_carrier_date"/>
-                <entry key="21" type="xstring" value="order_delivered_customer_date"/>
-                <entry key="22" type="xstring" value="order_estimated_delivery_date"/>
-                <entry key="23" type="xstring" value="order_item_id"/>
-                <entry key="24" type="xstring" value="product_id"/>
+                <entry key="14" type="xstring" value="Altura"/>
+                <entry key="15" type="xstring" value="Largura"/>
+                <entry key="16" type="xstring" value="order_id"/>
+                <entry key="17" type="xstring" value="customer_id"/>
+                <entry key="18" type="xstring" value="order_status"/>
+                <entry key="19" type="xstring" value="order_purchase_timestamp"/>
+                <entry key="20" type="xstring" value="order_approved_at"/>
+                <entry key="21" type="xstring" value="order_delivered_carrier_date"/>
+                <entry key="22" type="xstring" value="order_delivered_customer_date"/>
+                <entry key="23" type="xstring" value="order_estimated_delivery_date"/>
+                <entry key="24" type="xstring" value="order_item_id"/>
                 <entry key="25" type="xstring" value="seller_id"/>
                 <entry key="26" type="xstring" value="shipping_limit_date"/>
                 <entry key="27" type="xstring" value="price"/>
                 <entry key="28" type="xstring" value="freight_value"/>
-                <entry key="29" type="xstring" value="Day of week (number)"/>
+                <entry key="29" type="xstring" value="Day of month"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="5"/>
@@ -192,7 +198,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.joiner3.Joiner3NodeFactory"/>
     <entry key="node-name" type="xstring" value="Joiner"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -205,24 +211,37 @@
     <entry key="node-feature-version" type="xstring" value="5.2.2.v202403061155"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Joiner"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 18838, Cols: 37"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="Inactive Port Object"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_2"/>
         </config>
         <config key="port_3">
             <entry key="index" type="xint" value="3"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="Inactive Port Object"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_3"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="7d5552a1-f489-478c-9011-fdbc54014195"/>
     </config>
 </config>

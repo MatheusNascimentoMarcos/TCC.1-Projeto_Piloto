@@ -50,12 +50,12 @@
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="Day of month" type="xboolean" value="false"/>
+        <entry key="Day of month" type="xboolean" value="true"/>
         <config key="Day of week (number)_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="Day of week (number)" type="xboolean" value="true"/>
+        <entry key="Day of week (number)" type="xboolean" value="false"/>
         <config key="Day of week (name)_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -129,6 +129,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="7fdfdeb5-69d1-41bc-b794-9192395dda48"/>
+        <entry key="file_store_id" type="xstring" value="f820f67a-399b-41e8-96af-2f8a107dabd0"/>
     </config>
 </config>

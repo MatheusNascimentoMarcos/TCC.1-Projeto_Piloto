@@ -17,7 +17,7 @@
                 <entry key="1" type="xstring" value="ID_DM_Vendedor"/>
             </config>
             <config key="ExclList">
-                <entry key="array-size" type="xint" value="25"/>
+                <entry key="array-size" type="xint" value="24"/>
                 <entry key="0" type="xstring" value="Dia"/>
                 <entry key="1" type="xstring" value="Mês"/>
                 <entry key="2" type="xstring" value="Ano"/>
@@ -25,10 +25,10 @@
                 <entry key="4" type="xstring" value="Trimestre"/>
                 <entry key="5" type="xstring" value="Semestre"/>
                 <entry key="6" type="xstring" value="ID_DM_Cliente"/>
-                <entry key="7" type="xstring" value="CEP"/>
-                <entry key="8" type="xstring" value="Cidade"/>
-                <entry key="9" type="xstring" value="UF"/>
-                <entry key="10" type="xstring" value="ID_Cliente_Exclusivo"/>
+                <entry key="7" type="xstring" value="ID_Cliente_Exclusivo"/>
+                <entry key="8" type="xstring" value="CEP"/>
+                <entry key="9" type="xstring" value="Cidade"/>
+                <entry key="10" type="xstring" value="UF"/>
                 <entry key="11" type="xstring" value="ID_Vendedor"/>
                 <entry key="12" type="xstring" value="CEP (right)"/>
                 <entry key="13" type="xstring" value="Cidade (right)"/>
@@ -38,11 +38,10 @@
                 <entry key="17" type="xstring" value="order_id"/>
                 <entry key="18" type="xstring" value="customer_id"/>
                 <entry key="19" type="xstring" value="order_item_id"/>
-                <entry key="20" type="xstring" value="product_id"/>
-                <entry key="21" type="xstring" value="seller_id"/>
-                <entry key="22" type="xstring" value="price"/>
-                <entry key="23" type="xstring" value="freight_value"/>
-                <entry key="24" type="xstring" value="Day of week (number)"/>
+                <entry key="20" type="xstring" value="seller_id"/>
+                <entry key="21" type="xstring" value="price"/>
+                <entry key="22" type="xstring" value="freight_value"/>
+                <entry key="23" type="xstring" value="Day of month"/>
             </config>
             <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>
@@ -56,11 +55,21 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="enableHilite" type="xboolean" value="false"/>
+        <config key="valueDelimiter_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="valueDelimiter" type="xstring" value=", "/>
         <config key="sortInMemory_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="sortInMemory" type="xboolean" value="false"/>
+        <config key="columnNamePolicy_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="columnNamePolicy" type="xstring" value="Aggregation method (column name)"/>
         <config key="aggregationColumn">
             <config key="columnNames">
                 <entry key="array-size" type="xint" value="1"/>
@@ -85,11 +94,6 @@
         <config key="aggregationOperatorSettings"/>
         <config key="patternAggregators"/>
         <config key="dataTypeAggregators"/>
-        <config key="columnNamePolicy_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="columnNamePolicy" type="xstring" value="Aggregation method (column name)"/>
         <config key="retainOrder_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -100,11 +104,6 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="inMemory" type="xboolean" value="false"/>
-        <config key="valueDelimiter_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="valueDelimiter" type="xstring" value=", "/>
         <config key="nodeVersion_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -113,7 +112,7 @@
         <entry key="typeMatch" type="xbyte" value="0"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.groupby.GroupByNodeFactory"/>
     <entry key="node-name" type="xstring" value="GroupBy"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -126,16 +125,19 @@
     <entry key="node-feature-version" type="xstring" value="5.2.2.v202403061155"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="GroupBy"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 10377, Cols: 3"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="0acf0418-5922-4455-94e6-1bd77e5402ef"/>
     </config>
 </config>
