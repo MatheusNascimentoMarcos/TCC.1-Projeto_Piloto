@@ -6,6 +6,26 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="failOnError_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="failOnError" type="xboolean" value="true"/>
+        <config key="batchSize_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="batchSize" type="xint" value="1000"/>
+        <config key="showStatus_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="showStatus" type="xboolean" value="true"/>
+        <config key="knime_to_external_mapping_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_dataTypeMapping"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="knime_to_external_mapping"/>
         <config key="dbTable_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_dbmetadata"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -15,6 +35,11 @@
             <entry key="schema" type="xstring" value="TCC"/>
             <entry key="table" type="xstring" value="FT_Venda"/>
         </config>
+        <config key="disableDbDataPort_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="disableDbDataPort" type="xboolean" value="false"/>
         <config key="setColumns">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
@@ -44,31 +69,6 @@
                 </config>
             </config>
         </config>
-        <config key="knime_to_external_mapping_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_dataTypeMapping"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="knime_to_external_mapping"/>
-        <config key="batchSize_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="batchSize" type="xint" value="1000"/>
-        <config key="failOnError_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="failOnError" type="xboolean" value="true"/>
-        <config key="showStatus_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="showStatus" type="xboolean" value="true"/>
-        <config key="disableDbDataPort_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="disableDbDataPort" type="xboolean" value="false"/>
         <config key="dropExisting_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -76,10 +76,10 @@
         <entry key="dropExisting" type="xboolean" value="false"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="Execute failed: Error while adding rows #-1000 - #0, reason: Field 'ID_Produto' doesn't have a default value"/>
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Database connection does not exist. Please reset the corresponding connector node."/>
     </config>
     <entry key="factory" type="xstring" value="org.knime.database.node.io.write.DBWriteNodeFactory"/>
     <entry key="node-name" type="xstring" value="DB Writer"/>
