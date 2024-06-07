@@ -23,7 +23,11 @@
         <entry key="statement" type="xstring" value="INSERT INTO `DM_Cliente` (%%00010  `ID_Cliente_Exclusivo`,%%00010  `CEP`,%%00010  `Cidade`,%%00010  `UF`%%00010)%%00010SELECT %%00010  `ID_Cliente_Exclusivo`,%%00010  `CEP`,%%00010  `Cidade`,%%00010  `UF`%%00010FROM `Teste_Load`;"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Database connection does not exist. Please reset the corresponding connector node."/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.database.node.manipulation.executor.DBExecutorNodeFactory"/>
     <entry key="node-name" type="xstring" value="DB SQL Executor"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database nodes"/>
