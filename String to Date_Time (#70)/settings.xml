@@ -13,15 +13,11 @@
         <config key="col_select">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="5"/>
+                <entry key="array-size" type="xint" value="1"/>
                 <entry key="0" type="xstring" value="order_purchase_timestamp"/>
-                <entry key="1" type="xstring" value="order_delivered_carrier_date"/>
-                <entry key="2" type="xstring" value="order_delivered_customer_date"/>
-                <entry key="3" type="xstring" value="order_estimated_delivery_date"/>
-                <entry key="4" type="xstring" value="shipping_limit_date"/>
             </config>
             <config key="excluded_names">
-                <entry key="array-size" type="xint" value="16"/>
+                <entry key="array-size" type="xint" value="14"/>
                 <entry key="0" type="xstring" value="ID_Cliente_Exclusivo"/>
                 <entry key="1" type="xstring" value="CEP"/>
                 <entry key="2" type="xstring" value="Cidade"/>
@@ -34,10 +30,8 @@
                 <entry key="9" type="xstring" value="Categoria"/>
                 <entry key="10" type="xstring" value="order_id"/>
                 <entry key="11" type="xstring" value="customer_id"/>
-                <entry key="12" type="xstring" value="order_status"/>
-                <entry key="13" type="xstring" value="order_approved_at"/>
-                <entry key="14" type="xstring" value="order_item_id"/>
-                <entry key="15" type="xstring" value="seller_id"/>
+                <entry key="12" type="xstring" value="order_item_id"/>
+                <entry key="13" type="xstring" value="seller_id"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
             <config key="name_pattern">
@@ -62,12 +56,12 @@
             <entry key="EnabledStatus" type="xboolean" value="false"/>
         </config>
         <entry key="suffix" type="xstring" value="(Date&amp;Time)"/>
-        <entry key="typeEnum" type="xstring" value="LOCAL_DATE_TIME"/>
+        <entry key="typeEnum" type="xstring" value="LOCAL_DATE"/>
         <config key="date_format_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="date_format" type="xstring" value="yyyy-MM-dd HH:mm:ss"/>
+        <entry key="date_format" type="xstring" value="yyyy-MM-dd"/>
         <config key="locale_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -100,12 +94,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 112650, Cols: 29"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 112650, Cols: 23"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="1d013194-72a4-4b2a-afc5-af40fe91b854"/>
+        <entry key="file_store_id" type="xstring" value="a366eebc-ca02-4a4d-b7a0-451ec61f5af4"/>
     </config>
 </config>

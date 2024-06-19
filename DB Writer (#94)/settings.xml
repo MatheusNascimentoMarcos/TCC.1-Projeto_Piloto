@@ -18,11 +18,12 @@
         <config key="setColumns">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="4"/>
-                <entry key="0" type="xstring" value="Ano"/>
-                <entry key="1" type="xstring" value="Mês"/>
-                <entry key="2" type="xstring" value="Semana"/>
-                <entry key="3" type="xstring" value="Dia"/>
+                <entry key="array-size" type="xint" value="5"/>
+                <entry key="0" type="xstring" value="Data"/>
+                <entry key="1" type="xstring" value="Ano"/>
+                <entry key="2" type="xstring" value="Mês"/>
+                <entry key="3" type="xstring" value="Semana"/>
+                <entry key="4" type="xstring" value="Dia"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="2"/>
@@ -38,7 +39,7 @@
             </config>
             <config key="datatype">
                 <config key="typelist">
-                    <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.time.localdate.LocalDateValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
@@ -115,14 +116,14 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 719, Cols: 7"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 774, Cols: 7"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBDataPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBDataPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="MySQL f6f44ec8-b3d3-41d1-8f18-7de91d3bada3"/>
+            <entry key="port_object_summary" type="xstring" value="MySQL 03155034-32f4-430d-9d4a-2d95ff6e0544"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
@@ -130,6 +131,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="00d8cd18-b235-4206-aabd-04ed6f9dde81"/>
+        <entry key="file_store_id" type="xstring" value="b0545caf-36f8-4268-adb9-bdfbe94a6626"/>
     </config>
 </config>
