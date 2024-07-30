@@ -1,0 +1,41 @@
+--Criação de Tabelas
+
+CREATE TABLE Teste_Load (
+  ID_Cliente_Exclusivo varchar(255) NOT NULL,
+  CEP varchar(8) DEFAULT NULL,
+  Cidade varchar(255) DEFAULT NULL,
+  UF varchar(2) DEFAULT NULL,
+  PRIMARY KEY (ID_Cliente_Exclusivo)
+);
+
+CREATE TABLE Tabela_Data_de_Carga (
+  ID int NOT NULL AUTO_INCREMENT,
+  Data date DEFAULT NULL,
+  PRIMARY KEY (ID)
+);
+
+--Procedimento para gerar datas entre cargas do DW
+
+CREATE DEFINER=admin@% PROCEDURE Staging Area.GETDATEs()
+BEGIN
+    DECLARE Data_Inicial DATE;
+    DECLARE Data_Final DATE;
+
+    -- Criar a tabela Datas se não existir
+    CREATE TABLE IF NOT EXISTS Datas (
+        data DATE NOT NULL
+    );
+
+    -- Limpar a tabela Datas para evitar duplicações
+    TRUNCATE TABLE Datas;
+
+    -- Definir variáveis
+    SET Data_Inicial = (SELECT MAX(DATA) FROM Tabela_Data_de_Carga WHERE DATA NOT IN (SELECT MAX(DATA) FROM Tabela_Data_de_Carga));
+    SET Data_Final = (SELECT MAX(DATA) FROM Tabela_Data_de_Carga);
+
+    -- Selecionar os dados usando a variável definida
+    WHILE Data_Inicial <= Data_Final DO
+        INSERT INTO Datas (data) VALUES (Data_Inicial);
+        SET Data_Inicial = DATE_ADD(Data_Inicial, INTERVAL 1 DAY);
+    END WHILE;
+END
