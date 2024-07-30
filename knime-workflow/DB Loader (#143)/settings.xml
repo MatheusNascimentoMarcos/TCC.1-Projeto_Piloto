@@ -36,7 +36,7 @@
         </config>
         <config key="tableName">
             <entry key="database" type="xstring" value=""/>
-            <entry key="schema" type="xstring" value="TCC"/>
+            <entry key="schema" type="xstring" value="olist"/>
             <entry key="table" type="xstring" value="FT_Venda"/>
         </config>
         <config key="loaderMode_Internals">
@@ -96,7 +96,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="MySQL ef489858-c68c-4f97-99f2-8b17f4a3d059"/>
+            <entry key="port_object_summary" type="xstring" value="MySQL f057bb46-c777-436a-8848-c5297567d214"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -104,6 +104,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="b4c4f956-04c1-4f8e-bcc2-c8d119dacb9c"/>
+        <entry key="file_store_id" type="xstring" value="cf3bd80a-7b70-4d23-955a-22dca19fd4a8"/>
     </config>
 </config>
