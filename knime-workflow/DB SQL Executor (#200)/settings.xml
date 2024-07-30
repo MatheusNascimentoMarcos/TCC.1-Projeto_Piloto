@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="statementSeparator" type="xstring" value=";"/>
-        <entry key="statement" type="xstring" value="INSERT INTO olist.DM_Cliente (ID_Cliente_Exclusivo, CEP, Cidade, UF)%%00010SELECT ID_Cliente_Exclusivo, CEP, Cidade, UF%%00010FROM `Staging Area`.DM_Cliente_Load;"/>
+        <entry key="statement" type="xstring" value="INSERT INTO olist.DM_Cliente (ID_Cliente_Exclusivo, CEP, Cidade, UF, Data_Inicio, Data_Fim, Ativo)%%00010SELECT %%00010    ID_Cliente_Exclusivo, %%00010    CEP, %%00010    Cidade, %%00010    UF, %%00010    CURRENT_DATE AS Data_Inicio,  -- Define Data_Inicio como a data atual%%00010    NULL AS Data_Fim,             -- Define Data_Fim como NULL%%00010    TRUE AS Ativo                 -- Define Ativo como TRUE%%00010FROM `Staging Area`.DM_Cliente_Load;"/>
         <config key="multipleStatement_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -35,7 +35,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="MySQL 998423dc-7b11-4b14-bdaa-dfa597a2964e"/>
+            <entry key="port_object_summary" type="xstring" value="MySQL 98e98a42-0a6f-43d9-9e95-3715074d7cf4"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -43,6 +43,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="3dd71663-e164-4372-bd1b-a12bb94c52e4"/>
+        <entry key="file_store_id" type="xstring" value="5a4081d1-db5d-4426-9520-a42af959d95f"/>
     </config>
 </config>

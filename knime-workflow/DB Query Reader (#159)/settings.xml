@@ -30,10 +30,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Node created an empty data table."/>
-    </config>
     <entry key="factory" type="xstring" value="org.knime.database.node.io.reader.query.DBQueryReaderNodeFactory"/>
     <entry key="node-name" type="xstring" value="DB Query Reader"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database nodes"/>
@@ -53,12 +49,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 5"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 3095, Cols: 5"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="0ea399d2-e573-4408-be07-ab4293b3ed00"/>
+        <entry key="file_store_id" type="xstring" value="940fa791-e63c-43ce-8e15-d64a6dca4a71"/>
     </config>
 </config>

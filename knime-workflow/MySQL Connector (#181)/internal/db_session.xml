@@ -2,7 +2,7 @@
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="db_session">
     <config key="Session Info">
         <entry key="version" type="xint" value="5"/>
-        <entry key="sessionID" type="xstring" value="7ad8f109-ea5e-4d0a-ac4b-b347ece24f13"/>
+        <entry key="sessionID" type="xstring" value="313c239c-a19d-4776-9e40-cf56ddb0eab9"/>
         <entry key="dbTypeId" type="xstring" value="mysql"/>
         <entry key="dialectId" type="xstring" value="mysql"/>
         <entry key="dbURL" type="xstring" value="jdbc:mysql://35.199.97.205:3306/olist"/>

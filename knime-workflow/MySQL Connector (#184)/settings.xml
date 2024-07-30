@@ -933,7 +933,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="MySQL bf7ab17c-559b-4593-869e-0d0d4520668b"/>
+            <entry key="port_object_summary" type="xstring" value="MySQL bddec103-b3a9-4d03-97a7-1b969c1ce0d6"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -941,6 +941,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="b5482333-38a6-4e43-8c25-7b0ced6c1bec"/>
+        <entry key="file_store_id" type="xstring" value="4586d31c-0723-46c2-8e26-d91d3e7c4dea"/>
     </config>
 </config>

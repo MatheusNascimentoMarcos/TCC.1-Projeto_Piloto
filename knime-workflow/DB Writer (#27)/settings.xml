@@ -97,6 +97,10 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Node created an empty data table."/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.database.node.io.write.DBWriteNodeFactory"/>
     <entry key="node-name" type="xstring" value="DB Writer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database nodes"/>
@@ -116,14 +120,14 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 3095, Cols: 6"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 6"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBDataPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBDataPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="MySQL ee5e0767-4fdd-4260-bd6a-cf9a8248225a"/>
+            <entry key="port_object_summary" type="xstring" value="MySQL fd76ebec-a221-4ad9-bf09-dafc292134ca"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
@@ -131,6 +135,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="f9cfca8f-0599-47c4-9afc-6df26a8a790e"/>
+        <entry key="file_store_id" type="xstring" value="a9d2d609-fa5f-4962-96b8-7b4f43086e1c"/>
     </config>
 </config>
